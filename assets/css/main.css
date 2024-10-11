@@ -817,39 +817,14 @@ section,
   position: relative;
 }
 
+h2 {
+  font-size: 36px;
+}
+
 .section-title h2 {
-  font-size: 32px;
   font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
   text-transform: uppercase;
   position: relative;
-}
-
-.section-title h2:before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 160px;
-  height: 1px;
-  background: color-mix(in srgb, var(--default-color), transparent 60%);
-  left: 0;
-  right: 0;
-  bottom: 1px;
-  margin: auto;
-}
-
-.section-title h2::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: var(--accent-color);
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
 }
 
 .section-title p {
@@ -984,6 +959,10 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about h2 {
+  font-size: 36px;
+}
+
 .about ul {
   list-style: none;
   padding: 0;
@@ -1005,6 +984,14 @@ section,
   font-size: 1.5rem;
   line-height: 2rem;
 }
+
+@media (max-width: 768px) {
+  .about .content {
+    font-size: 18px;
+    line-height: unset;
+  }
+}
+
 
 .about .read-more {
   color: var(--accent-color);
@@ -1044,13 +1031,20 @@ section,
   padding: 30px 0;
 }
 
-.why-us .content h3 {
+.why-us .content h2 {
   font-weight: 400;
-  font-size: 34px;
+  font-size: 36px;
 }
 
 .why-us .content p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .why-us .content p {
+    font-size: 18px;
+  }
 }
 
 .why-us .faq-container .faq-item {
@@ -1061,6 +1055,13 @@ section,
   box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: 0.3s ease;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .why-us .faq-container .faq-item {
+    font-size: 18px;
+  }
 }
 
 .why-us .faq-container .faq-item:hover {
@@ -1157,12 +1158,19 @@ section,
 # Skills Section
 --------------------------------------------------------------*/
 .skills .content h3 {
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: 700;
 }
 
 .skills .content p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .skills .content p {
+    font-size: 18px;
+  }
 }
 
 .skills .content p:last-child {
@@ -1183,6 +1191,7 @@ section,
   display: block;
   background: none;
   border-radius: 0;
+  font-size: 16px;
 }
 
 .skills .progress .skill {
@@ -1215,6 +1224,17 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
+.services .section-title p {
+  margin-top: 24px;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .services .section-title p {
+    font-size: 18px;
+  }
+}
+
 .services .service-item {
   background-color: var(--surface-color);
   box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
@@ -1246,7 +1266,7 @@ section,
 
 .services .service-item p {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 0;
 }
 
@@ -1300,6 +1320,13 @@ section,
 
 .call-to-action p {
   color: var(--default-color);
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .call-to-action p {
+    font-size: 18px;
+  }
 }
 
 .call-to-action .cta-btn {
@@ -1334,6 +1361,17 @@ section,
   padding: 50px 30px;
   transition: all ease-in-out 0.4s;
   height: 100%;
+}
+
+.innovation .section-title p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .innovation .section-title p {
+    font-size: 18px;
+  }
 }
 
 .innovation .service-item .icon {
@@ -1810,6 +1848,17 @@ section,
   height: 100%;
 }
 
+.contact .section-title p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .contact .section-title p {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 575px) {
   .contact .info-wrap {
     padding: 20px;
@@ -1956,7 +2005,7 @@ section,
 }
 
 .portfolio-details .portfolio-description h2 {
-  font-size: 26px;
+  font-size: 32px;
   font-weight: 700;
   margin-bottom: 20px;
 }
